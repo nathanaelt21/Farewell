@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surat Perpisahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <div class="background-glow secondary"></div>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">Surat Perpisahan</div>
+      </header>
+
+      <div id="introOverlay" class="intro-overlay">
+        <div class="case-letter">
+          <div class="case-header">Case Letter</div>
+          <div class="case-box">
+            <div class="seal">✉</div>
+            <p>Selembar surat menunggu untuk dibuka.</p>
+          </div>
+
+          <div class="intro-actions">
+            <button id="openLetter" class="primary-btn" type="button">Buka</button>
+            <button id="closeBtn" class="secondary-btn" type="button">Keluar</button>
+          </div>
+        </div>
+      </div>
+
+      <main id="scene" class="scene hidden">
+        <section class="letter-wrap">
+          <div class="letter-shadow"></div>
+          <article class="letter" aria-live="polite">
+            <div class="letter-header">
+              <span class="date">11 Oktober 2026</span>
+              <span class="label">Untuk Kenangan</span>
+            </div>
+
+            <h1>Selamat siang/sore buat kalian semua, temen-temen dan rekan-rekan pengurus OSIS yang liat!</h1>
+
+            <p>
+              Gila, nggak kerasa ya… 1,5 tahun kita bareng-bareng di OSIS akhirnya mau berakhir. Dari rapat yang kadang bikin kepala pusing, acara yang penuh drama dan kerja lembur, sampe momen-momen ngakak bareng atau bahkan ada yang sampe baper di balik layar, semuanya kita lewatin bareng.
+            </p>
+
+            <p>
+              Secara pribadi, aku mau bilang makasih banget buat semuanya. Makasih buat tenaga dan waktunya yang kalian korbankan. Buat setiap acara yang akhirnya sukses, padahal seringnya harus ngeoprek sampe lupa istirahat.
+            </p>
+
+            <p>
+              Makasih juga buat saling support-nya. Pas ada yang berantakan, kita nggak saling nyalahin, tapi malah saling pegang bahu dan cari jalan keluar bareng.
+            </p>
+
+            <p>
+              Dan yang paling penting, makasih buat pelajarannya. Dari kalian aku belajar banyak soal kepemimpinan, soal rendah hati, dan soal betapa pentingnya kerja tim yang solid.
+            </p>
+
+            <p>
+              Satu setengah tahun ini nggak cuma soal ngejar proker doang. Ini soal kita yang tumbuh bareng. Kita datang dari sifat dan latar belakang yang beda-beda, tapi akhirnya bisa nyatu karena komitmen yang sama.
+            </p>
+
+            <p>
+              Jabatan di OSIS emang berakhir hari ini, tapi ikatan kekeluargaan dan semua jejak perjuangan yang udah kita ukir bareng… itu nggak akan hilang.
+            </p>
+
+            <p class="closing-line">
+              Makasih banyak ya, semuanya. ❤️
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <audio id="bgAudio" loop preload="auto"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
