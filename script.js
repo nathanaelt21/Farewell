@@ -4,9 +4,11 @@ const scene = document.getElementById('scene');
 const openLetterButton = document.getElementById('openLetter');
 const closeBtn = document.getElementById('closeBtn');
 
-const defaultMusic = 'video.mp3';
+const defaultMusic = '/Video.mp3';
 
 function playBackgroundMusic() {
+  if (!defaultMusic) return;
+
   audio.src = defaultMusic;
   audio.load();
   audio.volume = 0.55;
